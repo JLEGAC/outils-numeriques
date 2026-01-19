@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compteur de lignes — Boîte à outils texte</title>
+  <meta name="description" content="Compteur de lignes : lignes, lignes non vides, caractères." />
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+  <div class="brand">
+    <div class="dot" aria-hidden="true"></div>
+    <div>
+      <h1>Boîte à outils texte</h1>
+      <p class="sub">Des outils pratiques pour compter et transformer du texte.</p>
+    </div>
+  </div>
+
+  <nav class="tabs" aria-label="Navigation">
+    <a class="tab" href="../../index.html" data-route="/index.html">Accueil</a>
+    <a class="tab" href="../../tools/compteur/" data-route="/tools/compteur/">Compteur</a>
+    <a class="tab" href="../../tools/casse/" data-route="/tools/casse/">Casse</a>
+  </nav>
+</header>
+
+
+    <section class="card">
+      <h2>Compteur de lignes</h2>
+      <p class="hint">Colle ou saisis du texte : les compteurs se mettent à jour en direct.</p>
+
+      <div class="controls">
+        <button class="btn" id="btnClearCounter" type="button">Effacer</button>
+        <button class="btn ghost" id="btnSampleCounter" type="button">Exemple</button>
+      </div>
+
+      <textarea id="counterInput" class="area" spellcheck="false" placeholder="Colle ton texte ici…"></textarea>
+
+      <div class="stats" aria-live="polite">
+        <div class="stat">
+          <div class="k">Lignes</div>
+          <div class="v" id="statLines">0</div>
+        </div>
+        <div class="stat">
+          <div class="k">Lignes non vides</div>
+          <div class="v" id="statNonEmpty">0</div>
+        </div>
+        <div class="stat">
+          <div class="k">Caractères</div>
+          <div class="v" id="statChars">0</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <p>Aucune pub, Aucun cookie, Aucun tracking, Aucun appel à des services tiers.</p>
+</footer>
+
+  </main>
+
+  <script src="../../assets/app.js"></script>
+  <script src="./tool.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conversion de casse — Boîte à outils texte</title>
+  <meta name="description" content="Conversion minuscules ↔ majuscules, majuscule en tête de phrases et de mots." />
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+  <div class="brand">
+    <div class="dot" aria-hidden="true"></div>
+    <div>
+      <h1>Boîte à outils texte</h1>
+      <p class="sub">Des outils pratiques pour compter et transformer du texte.</p>
+    </div>
+  </div>
+
+  <nav class="tabs" aria-label="Navigation">
+    <a class="tab" href="../../index.html" data-route="/index.html">Accueil</a>
+    <a class="tab" href="../../tools/compteur/" data-route="/tools/compteur/">Compteur</a>
+    <a class="tab" href="../../tools/casse/" data-route="/tools/casse/">Casse</a>
+  </nav>
+</header>
+
+
+    <section class="card">
+      <h2>Conversion minuscules ↔ majuscules</h2>
+      <p class="hint">
+        Écris dans une des colonnes : l’autre se met à jour automatiquement.<br>
+        Les actions “phrases/mots” s’appliquent à la colonne minuscules.
+      </p>
+
+      <div class="grid2">
+        <div class="pane">
+          <div class="labelRow">
+            <label for="lowerArea">En minuscules</label>
+            <span class="mini">édition libre</span>
+          </div>
+
+          <textarea id="lowerArea" class="area" spellcheck="false" placeholder="Tape ici…"></textarea>
+
+          <div class="caseButtons">
+            <button class="btn" id="btnCopyLower" type="button">Copier</button>
+            <div class="caseActions">
+              <button class="btn ghost" id="btnSentenceCase" type="button">Majuscule en tête de phrases</button>
+              <button class="btn ghost" id="btnWordCase" type="button">Majuscule en tête de mots</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pane">
+          <div class="labelRow">
+            <label for="upperArea">En majuscules</label>
+            <span class="mini">édition libre</span>
+          </div>
+
+          <textarea id="upperArea" class="area" spellcheck="false" placeholder="…ou tape ici"></textarea>
+
+          <div class="caseButtons">
+            <button class="btn" id="btnCopyUpper" type="button">Copier</button>
+            <span class="toast centeredToast" id="caseToast" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footline">
+        <button class="link" id="btnClearCase" type="button" title="Effacer les deux zones">Effacer les deux</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <p>Aucune pub, Aucun cookie, Aucun tracking, Aucun appel à des services tiers.</p>
+</footer>
+
+  </main>
+
+  <script src="../../assets/app.js"></script>
+  <script src="./tool.js"></script>
+</body>
+</html>
