@@ -1,9 +1,10 @@
 # Boîte à outils texte (GitHub Pages)
 
-Petit site **100 % statique** (HTML / CSS / JavaScript) proposant des outils simples
-pour **analyser et transformer du texte** directement dans le navigateur.
+Petit site proposant des outils directement dans le navigateur.
 
-Aucune donnée n’est envoyée à un serveur : tout se fait localement.
+## 🌐 Accès au site
+
+👉 https://jlegac.github.io/outils-numeriques/
 
 ## ✨ Outils disponibles
 
@@ -19,10 +20,6 @@ Aucune donnée n’est envoyée à un serveur : tout se fait localement.
   - copie rapide vers le presse-papiers
 
 D’autres outils pourront être ajoutés progressivement.
-
-## 🌐 Accès au site
-
-👉 https://jlegac.github.io/compteur-lignes/
 
 ## 🧱 Arborescence du projet
 
